@@ -21,7 +21,7 @@ select name as "film languages " from language;
 
 
 
-select store_id from store;
+select count(store_id) from store;
+select count(staff_id) from staff;
 select first_name,last_name from staff;
-
 select first_name from staff;
