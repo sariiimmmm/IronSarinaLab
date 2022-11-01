@@ -2,12 +2,7 @@ use sakila;
 
 
 #1
-select actor_id, count(*) from film_actor
-group by actor_id
-order by count(*) desc
-limit 1;
-
-select first_name, last_name, count(*) as 'num' from actor 
+select first_name, last_name, count(film_id) as 'num' from actor 
 join film_actor using (actor_id)
 group by actor_id
 order by num desc
