@@ -110,18 +110,20 @@ where account_id=396
 group by type;
 
 #Query20
-select account_id,
-floor(sum(if(type='VYDAJ',amount,0))) as 'total_outgoing',
-floor(sum(if(type='PRIJEM',amount,0))) as 'total_incoming',
-floor(sum((if(type='VYDAJ',amount,0)))- sum(if(type='PRIJEM',amount,0))) as difference from trans
-where account_id=396;
-#Query21
+select account_id, 
+floor(sum(if(type = 'PRIJEM',amount,null))) as 'Income', 
+floor(sum(if(type = 'VYDAJ',amount,null))) as 'out',
+floor(sum(if(type = 'PRIJEM',amount,null))) - floor(sum(if(type = 'VYDAJ',amount,null))) as 'difference' 
+from trans
+where account_id = 396;
 
-select account_id,
-floor(sum(if(type='VYDAJ',amount,0))) as 'total_outgoing',
-floor(sum(if(type='PRIJEM',amount,0))) as 'total_incoming',
-floor(sum((if(type='VYDAJ',amount,0)))- sum(if(type='PRIJEM',amount,0))) as difference from trans
+
+
+#Query21
+select account_id, 
+floor(sum(if(type = 'PRIJEM',amount,null))) - floor(sum(if(type = 'VYDAJ',amount,null))) as 'difference' 
+from trans
 group by account_id
-order by account_id 
+order by difference desc
 limit 10;
 
