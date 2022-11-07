@@ -2113,8 +2113,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='28' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='257' h='32125' id='7' is-fixed='true' name='KPI Comparison' w='45700' x='52400' y='3375'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2187,8 +2187,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='37000' id='12' is-fixed='true' name='Profit Subcategory' w='94800' x='1400' y='2375'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2448,7 +2448,7 @@
       </viewpoint>
       <simple-id uuid='{9A9E187E-2EFF-4242-89DF-0343729AA1C3}' />
     </window>
-    <window class='worksheet' name='Most profitable product'>
+    <window class='worksheet' maximized='true' name='Most profitable product'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2545,7 +2545,7 @@
       <active id='-1' />
       <simple-id uuid='{97CACB27-C8F9-4CB3-ACB7-86043585C1A6}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 2'>
+    <window class='dashboard' name='Dashboard 2'>
       <viewpoints>
         <viewpoint name='Most Profitable Customers' />
         <viewpoint name='Most profitable product'>
