@@ -1,0 +1,2399 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1005.1835                               -->
+<workbook original-version='18.1' source-build='2022.3.0 (20223.22.1005.1835)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sample - Superstore' inline='true' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.1cci0nb06y747l16yc4ec0edfu3g'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/sarim/Downloads/Ironhack/IronSarinaLab/Week3/day5/Sample - Superstore.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='Orders' table='[Orders$]' type='table'>
+            <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Row ID' ordinal='0' />
+              <column datatype='string' name='Order ID' ordinal='1' />
+              <column datatype='date' name='Order Date' ordinal='2' />
+              <column datatype='date' name='Ship Date' ordinal='3' />
+              <column datatype='string' name='Ship Mode' ordinal='4' />
+              <column datatype='string' name='Customer ID' ordinal='5' />
+              <column datatype='string' name='Customer Name' ordinal='6' />
+              <column datatype='string' name='Segment' ordinal='7' />
+              <column datatype='string' name='Country' ordinal='8' />
+              <column datatype='string' name='City' ordinal='9' />
+              <column datatype='string' name='State' ordinal='10' />
+              <column datatype='integer' name='Postal Code' ordinal='11' />
+              <column datatype='string' name='Region' ordinal='12' />
+              <column datatype='string' name='Product ID' ordinal='13' />
+              <column datatype='string' name='Category' ordinal='14' />
+              <column datatype='string' name='Sub-Category' ordinal='15' />
+              <column datatype='string' name='Product Name' ordinal='16' />
+              <column datatype='real' name='Sales' ordinal='17' />
+              <column datatype='integer' name='Quantity' ordinal='18' />
+              <column datatype='real' name='Discount' ordinal='19' />
+              <column datatype='real' name='Profit' ordinal='20' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='People' table='[People$]' type='table'>
+            <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+              <column datatype='string' name='Person' ordinal='0' />
+              <column datatype='string' name='Region' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='Returns' table='[Returns$]' type='table'>
+            <columns gridOrigin='A1:B297:no:A1:B297:0' header='yes' outcome='6'>
+              <column datatype='string' name='Returned' ordinal='0' />
+              <column datatype='string' name='Order ID' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Category]' value='[Orders].[Category]' />
+          <map key='[City]' value='[Orders].[City]' />
+          <map key='[Country]' value='[Orders].[Country]' />
+          <map key='[Customer ID]' value='[Orders].[Customer ID]' />
+          <map key='[Customer Name]' value='[Orders].[Customer Name]' />
+          <map key='[Discount]' value='[Orders].[Discount]' />
+          <map key='[Order Date]' value='[Orders].[Order Date]' />
+          <map key='[Order ID (Returns)]' value='[Returns].[Order ID]' />
+          <map key='[Order ID]' value='[Orders].[Order ID]' />
+          <map key='[Person]' value='[People].[Person]' />
+          <map key='[Postal Code]' value='[Orders].[Postal Code]' />
+          <map key='[Product ID]' value='[Orders].[Product ID]' />
+          <map key='[Product Name]' value='[Orders].[Product Name]' />
+          <map key='[Profit]' value='[Orders].[Profit]' />
+          <map key='[Quantity]' value='[Orders].[Quantity]' />
+          <map key='[Region (People)]' value='[People].[Region]' />
+          <map key='[Region]' value='[Orders].[Region]' />
+          <map key='[Returned]' value='[Returns].[Returned]' />
+          <map key='[Row ID]' value='[Orders].[Row ID]' />
+          <map key='[Sales]' value='[Orders].[Sales]' />
+          <map key='[Segment]' value='[Orders].[Segment]' />
+          <map key='[Ship Date]' value='[Orders].[Ship Date]' />
+          <map key='[Ship Mode]' value='[Orders].[Ship Mode]' />
+          <map key='[State]' value='[Orders].[State]' />
+          <map key='[Sub-Category]' value='[Orders].[Sub-Category]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[People]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B297:no:A1:B297:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Person]</local-name>
+            <parent-name>[People]</parent-name>
+            <remote-alias>Person</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[People_2879493D838E46E6BD17430C8C8499E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region (People)]</local-name>
+            <parent-name>[People]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[People_2879493D838E46E6BD17430C8C8499E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Returned</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Returned]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Returned</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_830DE519209B4A9BA830D044B639BCFE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID (Returns)]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_830DE519209B4A9BA830D044B639BCFE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' name='[Discount]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='CountD' datatype='string' name='[Product Name]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region (People)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_8F9FF8A48D59414F9F606DC3F86B5C30]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='People' datatype='table' name='[__tableau_internal_object_id__].[People_2879493D838E46E6BD17430C8C8499E0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Returns' datatype='table' name='[__tableau_internal_object_id__].[Returns_830DE519209B4A9BA830D044B639BCFE]' role='measure' type='quantitative' />
+      <column-instance column='[Profit]' derivation='Count' name='[cnt:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Profit]' derivation='Min' name='[min:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Region (People)]' derivation='None' name='[none:Region (People):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Profit]' derivation='Sum' name='[pcrk:sum:Profit:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[pcto:sum:Profit:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance aggregation-param='10' column='[Profit]' derivation='Percentile' name='[prc10:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='5' column='[Profit]' derivation='Percentile' name='[prc5:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='95' column='[Profit]' derivation='Percentile' name='[prc95:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Order Date]' derivation='Quarter' name='[qr:Order Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:10]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' rank-options='Unique,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:11]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' rank-options='Unique,Descending' type='Rank'>
+          <order field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' />
+          <order field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[Region]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:12]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Unique,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' ordering-type='Field' rank-options='Unique,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='ModifiedCompetition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Dense,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:9]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' rank-options='Unique,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Discount]' derivation='Sum' name='[sum:Discount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Discount:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[cnt:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[min:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Region (People):nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Region:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[pcrk:sum:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[pcto:sum:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[prc10:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[prc5:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[prc95:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:10]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:11]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:12]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:3]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:4]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:5]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:7]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:9]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[qr:Order Date:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#87d180'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#fcc66d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>4</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Central&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;South&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;East&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Sub-Category:nk]' type='palette'>
+            <map to='#9edae5'>
+              <bucket>&quot;Binders&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Accessories&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;Chairs&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Copiers&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;Phones&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_8F9FF8A48D59414F9F606DC3F86B5C30'>
+            <properties context=''>
+              <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='People' id='People_2879493D838E46E6BD17430C8C8499E0'>
+            <properties context=''>
+              <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='People' table='[People$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Person' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Returns' id='Returns_830DE519209B4A9BA830D044B639BCFE'>
+            <properties context=''>
+              <relation connection='excel-direct.1cci0nb06y747l16yc4ec0edfu3g' name='Returns' table='[Returns$]' type='table'>
+                <columns gridOrigin='A1:B297:no:A1:B297:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Returned' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Region]' />
+              <expression op='[Region (People)]' />
+            </expression>
+            <first-end-point object-id='Orders_8F9FF8A48D59414F9F606DC3F86B5C30' />
+            <second-end-point object-id='People_2879493D838E46E6BD17430C8C8499E0' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Order ID]' />
+              <expression op='[Order ID (Returns)]' />
+            </expression>
+            <first-end-point object-id='Orders_8F9FF8A48D59414F9F606DC3F86B5C30' />
+            <second-end-point object-id='Returns_830DE519209B4A9BA830D044B639BCFE' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI Comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='real' name='[Discount]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Discount]' derivation='Sum' name='[sum:Discount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year-Trunc' name='[tyr:Order Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Discount:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Discount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a6c8' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffbe7d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Discount:qk] + ([federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk] + [federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]))</rows>
+        <cols>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[tyr:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{7ABC1637-5C81-440C-A094-8C6F7F5730DB}' />
+    </worksheet>
+    <worksheet name='KPI Profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]</rows>
+        <cols>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{A53292BA-7479-43BF-955D-FBF2F9A3A355}' />
+    </worksheet>
+    <worksheet name='KPI Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='real' name='[Discount]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Discount]' derivation='Sum' name='[sum:Discount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Discount:qk]</rows>
+        <cols>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{04FBF2A0-40D8-4D9C-BE48-372E1B133098}' />
+    </worksheet>
+    <worksheet name='Most Profitable Customers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Customer Name:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Customer Name:nk]' />
+              <groupfilter function='member' level='[none:Customer Name:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Customer Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Tamara Chand&quot;</bucket>
+              <bucket>&quot;Raymond Buch&quot;</bucket>
+              <bucket>&quot;Sanjit Chand&quot;</bucket>
+              <bucket>&quot;Hunter Lopez&quot;</bucket>
+              <bucket>&quot;Adrian Barton&quot;</bucket>
+              <bucket>&quot;Tom Ashbrook&quot;</bucket>
+              <bucket>&quot;Christopher Martinez&quot;</bucket>
+              <bucket>&quot;Keith Dawkins&quot;</bucket>
+              <bucket>&quot;Andy Reiter&quot;</bucket>
+              <bucket>&quot;Daniel Raglin&quot;</bucket>
+              <bucket>&quot;Tom Boeckenhauer&quot;</bucket>
+              <bucket>&quot;Nathan Mautz&quot;</bucket>
+              <bucket>&quot;Sanjit Engle&quot;</bucket>
+              <bucket>&quot;Bill Shonely&quot;</bucket>
+              <bucket>&quot;Harry Marie&quot;</bucket>
+              <bucket>&quot;Todd Sumrall&quot;</bucket>
+              <bucket>&quot;Brian Moss&quot;</bucket>
+              <bucket>&quot;Christopher Conant&quot;</bucket>
+              <bucket>&quot;Jane Waco&quot;</bucket>
+              <bucket>&quot;Helen Wasserman&quot;</bucket>
+              <bucket>&quot;Greg Tran&quot;</bucket>
+              <bucket>&quot;Laura Armstrong&quot;</bucket>
+              <bucket>&quot;Adam Bellavance&quot;</bucket>
+              <bucket>&quot;Fred Hopkins&quot;</bucket>
+              <bucket>&quot;Pete Kriz&quot;</bucket>
+              <bucket>&quot;Steven Roelle&quot;</bucket>
+              <bucket>&quot;Shirley Daniels&quot;</bucket>
+              <bucket>&quot;Clay Ludtke&quot;</bucket>
+              <bucket>&quot;Robert Marley&quot;</bucket>
+              <bucket>&quot;Alan Dominguez&quot;</bucket>
+              <bucket>&quot;Maria Etezadi&quot;</bucket>
+              <bucket>&quot;Mark Cousins&quot;</bucket>
+              <bucket>&quot;Yana Sorensen&quot;</bucket>
+              <bucket>&quot;Katrina Willman&quot;</bucket>
+              <bucket>&quot;Penelope Sewall&quot;</bucket>
+              <bucket>&quot;Darrin Martin&quot;</bucket>
+              <bucket>&quot;Mitch Willingham&quot;</bucket>
+              <bucket>&quot;Karen Ferguson&quot;</bucket>
+              <bucket>&quot;Dan Reichenbach&quot;</bucket>
+              <bucket>&quot;Jim Epp&quot;</bucket>
+              <bucket>&quot;Justin Deggeller&quot;</bucket>
+              <bucket>&quot;Valerie Dominguez&quot;</bucket>
+              <bucket>&quot;Rick Wilson&quot;</bucket>
+              <bucket>&quot;John Murray&quot;</bucket>
+              <bucket>&quot;Corinna Mitchell&quot;</bucket>
+              <bucket>&quot;Dennis Pardue&quot;</bucket>
+              <bucket>&quot;Ben Ferrer&quot;</bucket>
+              <bucket>&quot;Paul Prost&quot;</bucket>
+              <bucket>&quot;Bill Eplett&quot;</bucket>
+              <bucket>&quot;Grace Kelly&quot;</bucket>
+              <bucket>&quot;James Galang&quot;</bucket>
+              <bucket>&quot;Edward Hooks&quot;</bucket>
+              <bucket>&quot;Amy Cox&quot;</bucket>
+              <bucket>&quot;Dianna Wilson&quot;</bucket>
+              <bucket>&quot;Eugene Moren&quot;</bucket>
+              <bucket>&quot;Denise Monton&quot;</bucket>
+              <bucket>&quot;Nick Crebassa&quot;</bucket>
+              <bucket>&quot;Alan Hwang&quot;</bucket>
+              <bucket>&quot;Yoseph Carroll&quot;</bucket>
+              <bucket>&quot;Anna Häberlin&quot;</bucket>
+              <bucket>&quot;Ruben Ausman&quot;</bucket>
+              <bucket>&quot;Pierre Wener&quot;</bucket>
+              <bucket>&quot;Rick Huthwaite&quot;</bucket>
+              <bucket>&quot;Lena Creighton&quot;</bucket>
+              <bucket>&quot;Steven Cartwright&quot;</bucket>
+              <bucket>&quot;Joe Elijah&quot;</bucket>
+              <bucket>&quot;Matt Abelman&quot;</bucket>
+              <bucket>&quot;Mitch Webber&quot;</bucket>
+              <bucket>&quot;Kristen Hastings&quot;</bucket>
+              <bucket>&quot;Jamie Kunitz&quot;</bucket>
+              <bucket>&quot;Frank Carlisle&quot;</bucket>
+              <bucket>&quot;Naresj Patel&quot;</bucket>
+              <bucket>&quot;Roland Schwarz&quot;</bucket>
+              <bucket>&quot;Quincy Jones&quot;</bucket>
+              <bucket>&quot;Seth Vernon&quot;</bucket>
+              <bucket>&quot;Harold Ryan&quot;</bucket>
+              <bucket>&quot;Dave Hallsten&quot;</bucket>
+              <bucket>&quot;Gary Hwang&quot;</bucket>
+              <bucket>&quot;Jim Kriz&quot;</bucket>
+              <bucket>&quot;Anthony Johnson&quot;</bucket>
+              <bucket>&quot;Philisse Overcash&quot;</bucket>
+              <bucket>&quot;Carol Adams&quot;</bucket>
+              <bucket>&quot;Bradley Drucker&quot;</bucket>
+              <bucket>&quot;Giulietta Baptist&quot;</bucket>
+              <bucket>&quot;Theone Pippenger&quot;</bucket>
+              <bucket>&quot;Tonja Turnell&quot;</bucket>
+              <bucket>&quot;Ivan Liston&quot;</bucket>
+              <bucket>&quot;Karen Daniels&quot;</bucket>
+              <bucket>&quot;Bill Donatelli&quot;</bucket>
+              <bucket>&quot;Gary Zandusky&quot;</bucket>
+              <bucket>&quot;Anne McFarland&quot;</bucket>
+              <bucket>&quot;Frank Hawley&quot;</bucket>
+              <bucket>&quot;Jill Fjeld&quot;</bucket>
+              <bucket>&quot;Max Jones&quot;</bucket>
+              <bucket>&quot;Jonathan Doherty&quot;</bucket>
+              <bucket>&quot;Claudia Bergmann&quot;</bucket>
+              <bucket>&quot;Natalie Webber&quot;</bucket>
+              <bucket>&quot;Brenda Bowman&quot;</bucket>
+              <bucket>&quot;Sample Company A&quot;</bucket>
+              <bucket>&quot;Erica Smith&quot;</bucket>
+              <bucket>&quot;Ionia McGrath&quot;</bucket>
+              <bucket>&quot;Annie Thurman&quot;</bucket>
+              <bucket>&quot;Katherine Murray&quot;</bucket>
+              <bucket>&quot;Heather Kirkland&quot;</bucket>
+              <bucket>&quot;Dana Kaydos&quot;</bucket>
+              <bucket>&quot;Bart Watters&quot;</bucket>
+              <bucket>&quot;Sarah Brown&quot;</bucket>
+              <bucket>&quot;Damala Kotsonis&quot;</bucket>
+              <bucket>&quot;Arianne Irving&quot;</bucket>
+              <bucket>&quot;Thomas Seio&quot;</bucket>
+              <bucket>&quot;Caroline Jumper&quot;</bucket>
+              <bucket>&quot;Anna Andreadi&quot;</bucket>
+              <bucket>&quot;Craig Carroll&quot;</bucket>
+              <bucket>&quot;Karen Carlisle&quot;</bucket>
+              <bucket>&quot;Maribeth Schnelling&quot;</bucket>
+              <bucket>&quot;Deborah Brumfield&quot;</bucket>
+              <bucket>&quot;George Ashbrook&quot;</bucket>
+              <bucket>&quot;Luke Weiss&quot;</bucket>
+              <bucket>&quot;Robert Dilbeck&quot;</bucket>
+              <bucket>&quot;Christine Sundaresam&quot;</bucket>
+              <bucket>&quot;Thomas Boland&quot;</bucket>
+              <bucket>&quot;George Zrebassa&quot;</bucket>
+              <bucket>&quot;Ken Lonsdale&quot;</bucket>
+              <bucket>&quot;Hunter Glantz&quot;</bucket>
+              <bucket>&quot;Pauline Webber&quot;</bucket>
+              <bucket>&quot;Brosina Hoffman&quot;</bucket>
+              <bucket>&quot;Shaun Weien&quot;</bucket>
+              <bucket>&quot;Gary Mitchum&quot;</bucket>
+              <bucket>&quot;Justin Ellison&quot;</bucket>
+              <bucket>&quot;Neoma Murray&quot;</bucket>
+              <bucket>&quot;Mary Zewe&quot;</bucket>
+              <bucket>&quot;John Lucas&quot;</bucket>
+              <bucket>&quot;Karen Bern&quot;</bucket>
+              <bucket>&quot;Stephanie Ulpright&quot;</bucket>
+              <bucket>&quot;Nicole Hansen&quot;</bucket>
+              <bucket>&quot;Jeremy Pistek&quot;</bucket>
+              <bucket>&quot;Bobby Elias&quot;</bucket>
+              <bucket>&quot;Justin MacKendrick&quot;</bucket>
+              <bucket>&quot;Ted Trevino&quot;</bucket>
+              <bucket>&quot;Jim Karlsson&quot;</bucket>
+              <bucket>&quot;Kunst Miller&quot;</bucket>
+              <bucket>&quot;Chris Selesnick&quot;</bucket>
+              <bucket>&quot;Tamara Willingham&quot;</bucket>
+              <bucket>&quot;Rob Dowd&quot;</bucket>
+              <bucket>&quot;Alejandro Grove&quot;</bucket>
+              <bucket>&quot;Doug Jacobs&quot;</bucket>
+              <bucket>&quot;Ken Heidel&quot;</bucket>
+              <bucket>&quot;Rick Reed&quot;</bucket>
+              <bucket>&quot;Alan Schoenberger&quot;</bucket>
+              <bucket>&quot;William Brown&quot;</bucket>
+              <bucket>&quot;Fred Chung&quot;</bucket>
+              <bucket>&quot;Roland Fjeld&quot;</bucket>
+              <bucket>&quot;Kelly Collister&quot;</bucket>
+              <bucket>&quot;Robert Waldorf&quot;</bucket>
+              <bucket>&quot;Fred Harton&quot;</bucket>
+              <bucket>&quot;Rob Williams&quot;</bucket>
+              <bucket>&quot;Michael Chen&quot;</bucket>
+              <bucket>&quot;Marina Lichtenstein&quot;</bucket>
+              <bucket>&quot;Jack Garza&quot;</bucket>
+              <bucket>&quot;Pauline Johnson&quot;</bucket>
+              <bucket>&quot;Elizabeth Moffitt&quot;</bucket>
+              <bucket>&quot;Toby Gnade&quot;</bucket>
+              <bucket>&quot;Scott Cohen&quot;</bucket>
+              <bucket>&quot;Emily Ducich&quot;</bucket>
+              <bucket>&quot;Lindsay Williams&quot;</bucket>
+              <bucket>&quot;Ellis Ballard&quot;</bucket>
+              <bucket>&quot;Keith Herrera&quot;</bucket>
+              <bucket>&quot;Becky Pak&quot;</bucket>
+              <bucket>&quot;Rick Bensley&quot;</bucket>
+              <bucket>&quot;Michael Paige&quot;</bucket>
+              <bucket>&quot;Jennifer Ferguson&quot;</bucket>
+              <bucket>&quot;Kalyca Meade&quot;</bucket>
+              <bucket>&quot;Brian Dahlen&quot;</bucket>
+              <bucket>&quot;Randy Ferguson&quot;</bucket>
+              <bucket>&quot;Ricardo Sperren&quot;</bucket>
+              <bucket>&quot;Nora Preis&quot;</bucket>
+              <bucket>&quot;Xylona Preis&quot;</bucket>
+              <bucket>&quot;Steve Chapman&quot;</bucket>
+              <bucket>&quot;Sue Ann Reed&quot;</bucket>
+              <bucket>&quot;Toby Carlisle&quot;</bucket>
+              <bucket>&quot;Mark Packer&quot;</bucket>
+              <bucket>&quot;Roy Phan&quot;</bucket>
+              <bucket>&quot;Jeremy Lonsdale&quot;</bucket>
+              <bucket>&quot;Phillip Flathmann&quot;</bucket>
+              <bucket>&quot;Juliana Krohn&quot;</bucket>
+              <bucket>&quot;Suzanne McNair&quot;</bucket>
+              <bucket>&quot;Jack O&apos;Briant&quot;</bucket>
+              <bucket>&quot;Nat Carroll&quot;</bucket>
+              <bucket>&quot;Ken Black&quot;</bucket>
+              <bucket>&quot;Arthur Prichep&quot;</bucket>
+              <bucket>&quot;Jamie Frazer&quot;</bucket>
+              <bucket>&quot;Tamara Manning&quot;</bucket>
+              <bucket>&quot;Sandra Glassco&quot;</bucket>
+              <bucket>&quot;Sung Pak&quot;</bucket>
+              <bucket>&quot;John Stevenson&quot;</bucket>
+              <bucket>&quot;Rick Hansen&quot;</bucket>
+              <bucket>&quot;Dave Poirier&quot;</bucket>
+              <bucket>&quot;Deirdre Greer&quot;</bucket>
+              <bucket>&quot;Lauren Leatherbury&quot;</bucket>
+              <bucket>&quot;Sally Hughsby&quot;</bucket>
+              <bucket>&quot;Lisa DeCherney&quot;</bucket>
+              <bucket>&quot;Ralph Arnett&quot;</bucket>
+              <bucket>&quot;Duane Noonan&quot;</bucket>
+              <bucket>&quot;Sylvia Foulston&quot;</bucket>
+              <bucket>&quot;Ken Dana&quot;</bucket>
+              <bucket>&quot;Dave Kipp&quot;</bucket>
+              <bucket>&quot;Lena Radford&quot;</bucket>
+              <bucket>&quot;Katherine Hughes&quot;</bucket>
+              <bucket>&quot;Sara Luxemburg&quot;</bucket>
+              <bucket>&quot;Peter McVee&quot;</bucket>
+              <bucket>&quot;Lena Hernandez&quot;</bucket>
+              <bucket>&quot;Benjamin Farhat&quot;</bucket>
+              <bucket>&quot;Ashley Jarboe&quot;</bucket>
+              <bucket>&quot;Frank Atkinson&quot;</bucket>
+              <bucket>&quot;Irene Maddox&quot;</bucket>
+              <bucket>&quot;Nora Paige&quot;</bucket>
+              <bucket>&quot;Nora Pelletier&quot;</bucket>
+              <bucket>&quot;Valerie Mitchum&quot;</bucket>
+              <bucket>&quot;Meg Tillman&quot;</bucket>
+              <bucket>&quot;Jenna Caffey&quot;</bucket>
+              <bucket>&quot;Janet Molinari&quot;</bucket>
+              <bucket>&quot;Clytie Kelty&quot;</bucket>
+              <bucket>&quot;Edward Nazzal&quot;</bucket>
+              <bucket>&quot;Anthony Rawles&quot;</bucket>
+              <bucket>&quot;Christina VanderZanden&quot;</bucket>
+              <bucket>&quot;Toby Braunhardt&quot;</bucket>
+              <bucket>&quot;Rob Lucas&quot;</bucket>
+              <bucket>&quot;Stewart Visinsky&quot;</bucket>
+              <bucket>&quot;Mark Hamilton&quot;</bucket>
+              <bucket>&quot;Denny Joy&quot;</bucket>
+              <bucket>&quot;Steve Nguyen&quot;</bucket>
+              <bucket>&quot;Rick Duston&quot;</bucket>
+              <bucket>&quot;Richard Bierner&quot;</bucket>
+              <bucket>&quot;Michelle Huthwaite&quot;</bucket>
+              <bucket>&quot;Dave Brooks&quot;</bucket>
+              <bucket>&quot;Resi Pölking&quot;</bucket>
+              <bucket>&quot;Deanra Eno&quot;</bucket>
+              <bucket>&quot;Speros Goranitis&quot;</bucket>
+              <bucket>&quot;Marc Crier&quot;</bucket>
+              <bucket>&quot;Monica Federle&quot;</bucket>
+              <bucket>&quot;Ruben Dartt&quot;</bucket>
+              <bucket>&quot;Katharine Harms&quot;</bucket>
+              <bucket>&quot;Justin Ritter&quot;</bucket>
+              <bucket>&quot;Eva Jacobs&quot;</bucket>
+              <bucket>&quot;Brian Thompson&quot;</bucket>
+              <bucket>&quot;Neil Ducich&quot;</bucket>
+              <bucket>&quot;Patrick Jones&quot;</bucket>
+              <bucket>&quot;Gene McClure&quot;</bucket>
+              <bucket>&quot;Scot Coram&quot;</bucket>
+              <bucket>&quot;Denny Blanton&quot;</bucket>
+              <bucket>&quot;Doug Bickford&quot;</bucket>
+              <bucket>&quot;Patrick O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Andrew Allen&quot;</bucket>
+              <bucket>&quot;Paul Van Hugh&quot;</bucket>
+              <bucket>&quot;Bart Pistole&quot;</bucket>
+              <bucket>&quot;Daniel Byrd&quot;</bucket>
+              <bucket>&quot;Jennifer Patt&quot;</bucket>
+              <bucket>&quot;Cathy Prescott&quot;</bucket>
+              <bucket>&quot;Carlos Daly&quot;</bucket>
+              <bucket>&quot;Chuck Clark&quot;</bucket>
+              <bucket>&quot;Beth Thompson&quot;</bucket>
+              <bucket>&quot;Max Ludwig&quot;</bucket>
+              <bucket>&quot;Bradley Talbott&quot;</bucket>
+              <bucket>&quot;Chad McGuire&quot;</bucket>
+              <bucket>&quot;Frank Preis&quot;</bucket>
+              <bucket>&quot;Cynthia Delaney&quot;</bucket>
+              <bucket>&quot;Nick Zandusky&quot;</bucket>
+              <bucket>&quot;Katrina Edelman&quot;</bucket>
+              <bucket>&quot;Frank Gastineau&quot;</bucket>
+              <bucket>&quot;Chris Cortes&quot;</bucket>
+              <bucket>&quot;Charles Crestani&quot;</bucket>
+              <bucket>&quot;Raymond Messe&quot;</bucket>
+              <bucket>&quot;Ted Butterfield&quot;</bucket>
+              <bucket>&quot;Nicole Fjeld&quot;</bucket>
+              <bucket>&quot;Ed Jacobs&quot;</bucket>
+              <bucket>&quot;Brendan Sweed&quot;</bucket>
+              <bucket>&quot;Trudy Brown&quot;</bucket>
+              <bucket>&quot;Shaun Chance&quot;</bucket>
+              <bucket>&quot;Dennis Kane&quot;</bucket>
+              <bucket>&quot;Harold Pawlan&quot;</bucket>
+              <bucket>&quot;Victoria Brennan&quot;</bucket>
+              <bucket>&quot;Carl Weiss&quot;</bucket>
+              <bucket>&quot;Steve Carroll&quot;</bucket>
+              <bucket>&quot;Sam Zeldin&quot;</bucket>
+              <bucket>&quot;Trudy Glocke&quot;</bucket>
+              <bucket>&quot;Aaron Hawkins&quot;</bucket>
+              <bucket>&quot;Chris McAfee&quot;</bucket>
+              <bucket>&quot;Ben Peterman&quot;</bucket>
+              <bucket>&quot;Georgia Rosenberg&quot;</bucket>
+              <bucket>&quot;Jessica Myrick&quot;</bucket>
+              <bucket>&quot;Alejandro Savely&quot;</bucket>
+              <bucket>&quot;Natalie DeCherney&quot;</bucket>
+              <bucket>&quot;Dianna Vittorini&quot;</bucket>
+              <bucket>&quot;Lynn Smith&quot;</bucket>
+              <bucket>&quot;Gary McGarr&quot;</bucket>
+              <bucket>&quot;Don Jones&quot;</bucket>
+              <bucket>&quot;Arthur Gainer&quot;</bucket>
+              <bucket>&quot;Nancy Lomonaco&quot;</bucket>
+              <bucket>&quot;Matthew Grinstein&quot;</bucket>
+              <bucket>&quot;Bradley Nguyen&quot;</bucket>
+              <bucket>&quot;Liz Preis&quot;</bucket>
+              <bucket>&quot;Paul Gonzalez&quot;</bucket>
+              <bucket>&quot;Bruce Degenhardt&quot;</bucket>
+              <bucket>&quot;Dean percer&quot;</bucket>
+              <bucket>&quot;Scott Williamson&quot;</bucket>
+              <bucket>&quot;Saphhira Shifley&quot;</bucket>
+              <bucket>&quot;Corey Catlett&quot;</bucket>
+              <bucket>&quot;Jay Kimmel&quot;</bucket>
+              <bucket>&quot;Jay Fein&quot;</bucket>
+              <bucket>&quot;Kristina Nunn&quot;</bucket>
+              <bucket>&quot;Katherine Ducich&quot;</bucket>
+              <bucket>&quot;Carl Ludwig&quot;</bucket>
+              <bucket>&quot;Dan Lawera&quot;</bucket>
+              <bucket>&quot;Liz Thompson&quot;</bucket>
+              <bucket>&quot;Ivan Gibson&quot;</bucket>
+              <bucket>&quot;Maribeth Yedwab&quot;</bucket>
+              <bucket>&quot;Ross DeVincentis&quot;</bucket>
+              <bucket>&quot;Art Ferguson&quot;</bucket>
+              <bucket>&quot;Logan Haushalter&quot;</bucket>
+              <bucket>&quot;Benjamin Venier&quot;</bucket>
+              <bucket>&quot;Aimee Bixby&quot;</bucket>
+              <bucket>&quot;Nat Gilpin&quot;</bucket>
+              <bucket>&quot;Julie Prescott&quot;</bucket>
+              <bucket>&quot;Craig Reiter&quot;</bucket>
+              <bucket>&quot;Russell Applegate&quot;</bucket>
+              <bucket>&quot;Barry Französisch&quot;</bucket>
+              <bucket>&quot;Lindsay Castell&quot;</bucket>
+              <bucket>&quot;Ann Chong&quot;</bucket>
+              <bucket>&quot;Andrew Gjertsen&quot;</bucket>
+              <bucket>&quot;Doug O&apos;Connell&quot;</bucket>
+              <bucket>&quot;Ken Brennan&quot;</bucket>
+              <bucket>&quot;Tony Molinari&quot;</bucket>
+              <bucket>&quot;Dennis Bolton&quot;</bucket>
+              <bucket>&quot;Michael Nguyen&quot;</bucket>
+              <bucket>&quot;Matt Collister&quot;</bucket>
+              <bucket>&quot;Delfina Latchford&quot;</bucket>
+              <bucket>&quot;Linda Cazamias&quot;</bucket>
+              <bucket>&quot;Sarah Foster&quot;</bucket>
+              <bucket>&quot;Anne Pryor&quot;</bucket>
+              <bucket>&quot;Evan Bailliet&quot;</bucket>
+              <bucket>&quot;Adam Hart&quot;</bucket>
+              <bucket>&quot;Maxwell Schwartz&quot;</bucket>
+              <bucket>&quot;Michelle Arnett&quot;</bucket>
+              <bucket>&quot;Philip Brown&quot;</bucket>
+              <bucket>&quot;Roy Französisch&quot;</bucket>
+              <bucket>&quot;Christina Anderson&quot;</bucket>
+              <bucket>&quot;John Castell&quot;</bucket>
+              <bucket>&quot;Bill Overfelt&quot;</bucket>
+              <bucket>&quot;Thomas Thornton&quot;</bucket>
+              <bucket>&quot;Allen Armold&quot;</bucket>
+              <bucket>&quot;Jeremy Ellison&quot;</bucket>
+              <bucket>&quot;Harold Engle&quot;</bucket>
+              <bucket>&quot;Katrina Bavinger&quot;</bucket>
+              <bucket>&quot;Mike Vittorini&quot;</bucket>
+              <bucket>&quot;Pamela Coakley&quot;</bucket>
+              <bucket>&quot;Christy Brittain&quot;</bucket>
+              <bucket>&quot;Helen Abelman&quot;</bucket>
+              <bucket>&quot;Ralph Kennedy&quot;</bucket>
+              <bucket>&quot;Todd Boyes&quot;</bucket>
+              <bucket>&quot;Stephanie Phelps&quot;</bucket>
+              <bucket>&quot;Theresa Coyne&quot;</bucket>
+              <bucket>&quot;Alejandro Ballentine&quot;</bucket>
+              <bucket>&quot;Lindsay Shagiari&quot;</bucket>
+              <bucket>&quot;Emily Burns&quot;</bucket>
+              <bucket>&quot;Christine Kargatis&quot;</bucket>
+              <bucket>&quot;Theresa Swint&quot;</bucket>
+              <bucket>&quot;Stefanie Holloman&quot;</bucket>
+              <bucket>&quot;Tim Brockman&quot;</bucket>
+              <bucket>&quot;Bill Tyler&quot;</bucket>
+              <bucket>&quot;Kean Takahito&quot;</bucket>
+              <bucket>&quot;Becky Castell&quot;</bucket>
+              <bucket>&quot;David Kendrick&quot;</bucket>
+              <bucket>&quot;Filia McAdams&quot;</bucket>
+              <bucket>&quot;Zuschuss Donatelli&quot;</bucket>
+              <bucket>&quot;Patrick Ryan&quot;</bucket>
+              <bucket>&quot;Maurice Satty&quot;</bucket>
+              <bucket>&quot;Ben Wallace&quot;</bucket>
+              <bucket>&quot;Erin Smith&quot;</bucket>
+              <bucket>&quot;Christine Abelman&quot;</bucket>
+              <bucket>&quot;Luke Schmidt&quot;</bucket>
+              <bucket>&quot;Roger Barcio&quot;</bucket>
+              <bucket>&quot;Evan Henry&quot;</bucket>
+              <bucket>&quot;Darren Powers&quot;</bucket>
+              <bucket>&quot;Eudokia Martin&quot;</bucket>
+              <bucket>&quot;Brian Stugart&quot;</bucket>
+              <bucket>&quot;Maya Herman&quot;</bucket>
+              <bucket>&quot;Shahid Collister&quot;</bucket>
+              <bucket>&quot;Kelly Andreada&quot;</bucket>
+              <bucket>&quot;Christina DeMoss&quot;</bucket>
+              <bucket>&quot;Logan Currie&quot;</bucket>
+              <bucket>&quot;Giulietta Dortch&quot;</bucket>
+              <bucket>&quot;Patrick Bzostek&quot;</bucket>
+              <bucket>&quot;Sean Christensen&quot;</bucket>
+              <bucket>&quot;Craig Leslie&quot;</bucket>
+              <bucket>&quot;John Lee&quot;</bucket>
+              <bucket>&quot;Sandra Flanagan&quot;</bucket>
+              <bucket>&quot;Mike Kennedy&quot;</bucket>
+              <bucket>&quot;Barbara Fisher&quot;</bucket>
+              <bucket>&quot;Mike Pelletier&quot;</bucket>
+              <bucket>&quot;Pete Armstrong&quot;</bucket>
+              <bucket>&quot;Tracy Zic&quot;</bucket>
+              <bucket>&quot;Denise Leinenbach&quot;</bucket>
+              <bucket>&quot;Joel Eaton&quot;</bucket>
+              <bucket>&quot;Trudy Schmidt&quot;</bucket>
+              <bucket>&quot;Alan Barnes&quot;</bucket>
+              <bucket>&quot;Toby Ritter&quot;</bucket>
+              <bucket>&quot;Peter Bühler&quot;</bucket>
+              <bucket>&quot;Tracy Collins&quot;</bucket>
+              <bucket>&quot;Nathan Gelder&quot;</bucket>
+              <bucket>&quot;Frank Olsen&quot;</bucket>
+              <bucket>&quot;Candace McMahon&quot;</bucket>
+              <bucket>&quot;Darren Budd&quot;</bucket>
+              <bucket>&quot;Maria Bertelson&quot;</bucket>
+              <bucket>&quot;Cathy Armstrong&quot;</bucket>
+              <bucket>&quot;Matt Collins&quot;</bucket>
+              <bucket>&quot;Dean Katz&quot;</bucket>
+              <bucket>&quot;Barry Pond&quot;</bucket>
+              <bucket>&quot;James Lanier&quot;</bucket>
+              <bucket>&quot;Richard Eichhorn&quot;</bucket>
+              <bucket>&quot;Chad Cunningham&quot;</bucket>
+              <bucket>&quot;Roger Demir&quot;</bucket>
+              <bucket>&quot;Brian DeCherney&quot;</bucket>
+              <bucket>&quot;John Grady&quot;</bucket>
+              <bucket>&quot;Corey-Lock&quot;</bucket>
+              <bucket>&quot;Victor Preis&quot;</bucket>
+              <bucket>&quot;Cynthia Arntzen&quot;</bucket>
+              <bucket>&quot;Jas O&apos;Carroll&quot;</bucket>
+              <bucket>&quot;Julie Creighton&quot;</bucket>
+              <bucket>&quot;Julia Barnett&quot;</bucket>
+              <bucket>&quot;Jennifer Jackson&quot;</bucket>
+              <bucket>&quot;Shirley Schmidt&quot;</bucket>
+              <bucket>&quot;Don Miller&quot;</bucket>
+              <bucket>&quot;Stuart Van&quot;</bucket>
+              <bucket>&quot;Paul Stevenson&quot;</bucket>
+              <bucket>&quot;Frank Merwin&quot;</bucket>
+              <bucket>&quot;Philip Fox&quot;</bucket>
+              <bucket>&quot;Matt Connell&quot;</bucket>
+              <bucket>&quot;Cathy Hwang&quot;</bucket>
+              <bucket>&quot;Alice McCarthy&quot;</bucket>
+              <bucket>&quot;Kean Thornton&quot;</bucket>
+              <bucket>&quot;Bryan Spruell&quot;</bucket>
+              <bucket>&quot;Darrin Sayre&quot;</bucket>
+              <bucket>&quot;Liz Willingham&quot;</bucket>
+              <bucket>&quot;Parhena Norris&quot;</bucket>
+              <bucket>&quot;Fred McMath&quot;</bucket>
+              <bucket>&quot;Mark Van Huff&quot;</bucket>
+              <bucket>&quot;Greg Maxwell&quot;</bucket>
+              <bucket>&quot;Craig Carreira&quot;</bucket>
+              <bucket>&quot;Hallie Redmond&quot;</bucket>
+              <bucket>&quot;Cari Sayre&quot;</bucket>
+              <bucket>&quot;Eugene Barchas&quot;</bucket>
+              <bucket>&quot;Thomas Brumley&quot;</bucket>
+              <bucket>&quot;Magdelene Morse&quot;</bucket>
+              <bucket>&quot;Duane Benoit&quot;</bucket>
+              <bucket>&quot;Craig Molinari&quot;</bucket>
+              <bucket>&quot;Dorris liebe&quot;</bucket>
+              <bucket>&quot;Rob Haberlin&quot;</bucket>
+              <bucket>&quot;Michael Granlund&quot;</bucket>
+              <bucket>&quot;Mick Hernandez&quot;</bucket>
+              <bucket>&quot;Dean Braden&quot;</bucket>
+              <bucket>&quot;Claire Gute&quot;</bucket>
+              <bucket>&quot;Meg O&apos;Connel&quot;</bucket>
+              <bucket>&quot;Sally Knutson&quot;</bucket>
+              <bucket>&quot;Jesus Ocampo&quot;</bucket>
+              <bucket>&quot;David Smith&quot;</bucket>
+              <bucket>&quot;Mathew Reese&quot;</bucket>
+              <bucket>&quot;Erica Bern&quot;</bucket>
+              <bucket>&quot;Laurel Elliston&quot;</bucket>
+              <bucket>&quot;Carol Triggs&quot;</bucket>
+              <bucket>&quot;Paul MacIntyre&quot;</bucket>
+              <bucket>&quot;Sarah Bern&quot;</bucket>
+              <bucket>&quot;Kimberly Carter&quot;</bucket>
+              <bucket>&quot;Chuck Sachs&quot;</bucket>
+              <bucket>&quot;Jennifer Braxton&quot;</bucket>
+              <bucket>&quot;Annie Zypern&quot;</bucket>
+              <bucket>&quot;Cindy Chapman&quot;</bucket>
+              <bucket>&quot;Julia West&quot;</bucket>
+              <bucket>&quot;Anthony Jacobs&quot;</bucket>
+              <bucket>&quot;Erica Hackney&quot;</bucket>
+              <bucket>&quot;Cassandra Brandow&quot;</bucket>
+              <bucket>&quot;Lori Olson&quot;</bucket>
+              <bucket>&quot;Harry Greene&quot;</bucket>
+              <bucket>&quot;Emily Phan&quot;</bucket>
+              <bucket>&quot;Corey Roper&quot;</bucket>
+              <bucket>&quot;Sanjit Jacobs&quot;</bucket>
+              <bucket>&quot;Chad Sievert&quot;</bucket>
+              <bucket>&quot;Vivek Gonzalez&quot;</bucket>
+              <bucket>&quot;Brian Derr&quot;</bucket>
+              <bucket>&quot;Chloris Kastensmidt&quot;</bucket>
+              <bucket>&quot;Bryan Davis&quot;</bucket>
+              <bucket>&quot;Tracy Poddar&quot;</bucket>
+              <bucket>&quot;Brad Eason&quot;</bucket>
+              <bucket>&quot;Michelle Lonsdale&quot;</bucket>
+              <bucket>&quot;Bryan Mills&quot;</bucket>
+              <bucket>&quot;Patrick Gardner&quot;</bucket>
+              <bucket>&quot;Guy Armstrong&quot;</bucket>
+              <bucket>&quot;Ann Steele&quot;</bucket>
+              <bucket>&quot;Sonia Sunley&quot;</bucket>
+              <bucket>&quot;Debra Catini&quot;</bucket>
+              <bucket>&quot;Aaron Bergman&quot;</bucket>
+              <bucket>&quot;Brad Thomas&quot;</bucket>
+              <bucket>&quot;Joy Bell-&quot;</bucket>
+              <bucket>&quot;Julie Kriz&quot;</bucket>
+              <bucket>&quot;Matt Hagelstein&quot;</bucket>
+              <bucket>&quot;Mike Caudle&quot;</bucket>
+              <bucket>&quot;Neil Knudson&quot;</bucket>
+              <bucket>&quot;Bruce Geld&quot;</bucket>
+              <bucket>&quot;Tony Chapman&quot;</bucket>
+              <bucket>&quot;Mick Brown&quot;</bucket>
+              <bucket>&quot;Nona Balk&quot;</bucket>
+              <bucket>&quot;Henry MacAllister&quot;</bucket>
+              <bucket>&quot;Jim Mitchum&quot;</bucket>
+              <bucket>&quot;Brendan Dodson&quot;</bucket>
+              <bucket>&quot;Duane Huffman&quot;</bucket>
+              <bucket>&quot;Vivian Mathis&quot;</bucket>
+              <bucket>&quot;Kean Nguyen&quot;</bucket>
+              <bucket>&quot;Charles Sheldon&quot;</bucket>
+              <bucket>&quot;Jill Matthias&quot;</bucket>
+              <bucket>&quot;Julia Dunbar&quot;</bucket>
+              <bucket>&quot;Bart Folk&quot;</bucket>
+              <bucket>&quot;Liz Pelletier&quot;</bucket>
+              <bucket>&quot;Dorothy Badders&quot;</bucket>
+              <bucket>&quot;Dario Medina&quot;</bucket>
+              <bucket>&quot;Jocasta Rupert&quot;</bucket>
+              <bucket>&quot;Kelly Williams&quot;</bucket>
+              <bucket>&quot;Brooke Gillingham&quot;</bucket>
+              <bucket>&quot;Michelle Ellison&quot;</bucket>
+              <bucket>&quot;Susan Vittorini&quot;</bucket>
+              <bucket>&quot;Cari Schnelling&quot;</bucket>
+              <bucket>&quot;Emily Grady&quot;</bucket>
+              <bucket>&quot;Andy Yotov&quot;</bucket>
+              <bucket>&quot;Eric Murdock&quot;</bucket>
+              <bucket>&quot;Alyssa Tate&quot;</bucket>
+              <bucket>&quot;Sonia Cooley&quot;</bucket>
+              <bucket>&quot;Helen Andreada&quot;</bucket>
+              <bucket>&quot;Cynthia Voltz&quot;</bucket>
+              <bucket>&quot;Heather Jas&quot;</bucket>
+              <bucket>&quot;Jason Fortune-&quot;</bucket>
+              <bucket>&quot;Eileen Kiefer&quot;</bucket>
+              <bucket>&quot;Erin Creighton&quot;</bucket>
+              <bucket>&quot;Eugene Hildebrand&quot;</bucket>
+              <bucket>&quot;Sean Wendt&quot;</bucket>
+              <bucket>&quot;Brendan Murry&quot;</bucket>
+              <bucket>&quot;Tim Taslimi&quot;</bucket>
+              <bucket>&quot;Tiffany House&quot;</bucket>
+              <bucket>&quot;Charlotte Melton&quot;</bucket>
+              <bucket>&quot;Khloe Miller&quot;</bucket>
+              <bucket>&quot;Tamara Dahlen&quot;</bucket>
+              <bucket>&quot;Liz Carlisle&quot;</bucket>
+              <bucket>&quot;Hilary Holden&quot;</bucket>
+              <bucket>&quot;Catherine Glotzbach&quot;</bucket>
+              <bucket>&quot;Neil Französisch&quot;</bucket>
+              <bucket>&quot;Maria Zettner&quot;</bucket>
+              <bucket>&quot;Shui Tom&quot;</bucket>
+              <bucket>&quot;MaryBeth Skach&quot;</bucket>
+              <bucket>&quot;Angele Hood&quot;</bucket>
+              <bucket>&quot;Cyra Reiten&quot;</bucket>
+              <bucket>&quot;Michael Moore&quot;</bucket>
+              <bucket>&quot;Max Engle&quot;</bucket>
+              <bucket>&quot;Rob Beeghly&quot;</bucket>
+              <bucket>&quot;Clay Rozendal&quot;</bucket>
+              <bucket>&quot;Robert Barroso&quot;</bucket>
+              <bucket>&quot;Don Weiss&quot;</bucket>
+              <bucket>&quot;Allen Goldenen&quot;</bucket>
+              <bucket>&quot;Steven Ward&quot;</bucket>
+              <bucket>&quot;Shirley Jackson&quot;</bucket>
+              <bucket>&quot;Anthony Witt&quot;</bucket>
+              <bucket>&quot;Adam Shillingsburg&quot;</bucket>
+              <bucket>&quot;Chuck Magee&quot;</bucket>
+              <bucket>&quot;Roy Collins&quot;</bucket>
+              <bucket>&quot;Mark Haberlin&quot;</bucket>
+              <bucket>&quot;Craig Yedwab&quot;</bucket>
+              <bucket>&quot;Astrea Jones&quot;</bucket>
+              <bucket>&quot;Rachel Payne&quot;</bucket>
+              <bucket>&quot;Bobby Odegard&quot;</bucket>
+              <bucket>&quot;Mary O&apos;Rourke&quot;</bucket>
+              <bucket>&quot;Aleksandra Gannaway&quot;</bucket>
+              <bucket>&quot;Larry Tron&quot;</bucket>
+              <bucket>&quot;Muhammed MacIntyre&quot;</bucket>
+              <bucket>&quot;Dianna Arnett&quot;</bucket>
+              <bucket>&quot;Jason Klamczynski&quot;</bucket>
+              <bucket>&quot;Michael Stewart&quot;</bucket>
+              <bucket>&quot;Joe Kamberova&quot;</bucket>
+              <bucket>&quot;Janet Lee&quot;</bucket>
+              <bucket>&quot;Eric Hoffmann&quot;</bucket>
+              <bucket>&quot;Stuart Calhoun&quot;</bucket>
+              <bucket>&quot;Karl Braun&quot;</bucket>
+              <bucket>&quot;Tom Stivers&quot;</bucket>
+              <bucket>&quot;Patricia Hirasaki&quot;</bucket>
+              <bucket>&quot;Andrew Roberts&quot;</bucket>
+              <bucket>&quot;Muhammed Lee&quot;</bucket>
+              <bucket>&quot;Erin Mull&quot;</bucket>
+              <bucket>&quot;Lycoris Saunders&quot;</bucket>
+              <bucket>&quot;Patrick O&apos;Brill&quot;</bucket>
+              <bucket>&quot;Brad Norvell&quot;</bucket>
+              <bucket>&quot;Dorothy Dickinson&quot;</bucket>
+              <bucket>&quot;Greg Matthias&quot;</bucket>
+              <bucket>&quot;Russell D&apos;Ascenzo&quot;</bucket>
+              <bucket>&quot;Joel Jenkins&quot;</bucket>
+              <bucket>&quot;Clay Cheatham&quot;</bucket>
+              <bucket>&quot;Alan Shonely&quot;</bucket>
+              <bucket>&quot;Anemone Ratner&quot;</bucket>
+              <bucket>&quot;Laurel Workman&quot;</bucket>
+              <bucket>&quot;Guy Phonely&quot;</bucket>
+              <bucket>&quot;Sung Chung&quot;</bucket>
+              <bucket>&quot;Marc Harrigan&quot;</bucket>
+              <bucket>&quot;Roland Murray&quot;</bucket>
+              <bucket>&quot;Ed Ludwig&quot;</bucket>
+              <bucket>&quot;Joy Daniels&quot;</bucket>
+              <bucket>&quot;John Huston&quot;</bucket>
+              <bucket>&quot;Maureen Gastineau&quot;</bucket>
+              <bucket>&quot;Beth Fritzler&quot;</bucket>
+              <bucket>&quot;Nicole Brennan&quot;</bucket>
+              <bucket>&quot;Fred Wasserman&quot;</bucket>
+              <bucket>&quot;Phillip Breyer&quot;</bucket>
+              <bucket>&quot;Adrian Shami&quot;</bucket>
+              <bucket>&quot;Evan Minnotte&quot;</bucket>
+              <bucket>&quot;Janet Martin&quot;</bucket>
+              <bucket>&quot;Melanie Seite&quot;</bucket>
+              <bucket>&quot;Larry Blacks&quot;</bucket>
+              <bucket>&quot;Susan Pistek&quot;</bucket>
+              <bucket>&quot;Ed Braxton&quot;</bucket>
+              <bucket>&quot;Greg Guthrie&quot;</bucket>
+              <bucket>&quot;Larry Hughes&quot;</bucket>
+              <bucket>&quot;Anthony O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Barry Blumstein&quot;</bucket>
+              <bucket>&quot;Tony Sayre&quot;</bucket>
+              <bucket>&quot;Ryan Crowe&quot;</bucket>
+              <bucket>&quot;Roy Skaria&quot;</bucket>
+              <bucket>&quot;George Bell&quot;</bucket>
+              <bucket>&quot;Ricardo Emerson&quot;</bucket>
+              <bucket>&quot;Daniel Lacy&quot;</bucket>
+              <bucket>&quot;Jason Gross&quot;</bucket>
+              <bucket>&quot;Carl Jackson&quot;</bucket>
+              <bucket>&quot;Eric Barreto&quot;</bucket>
+              <bucket>&quot;Lela Donovan&quot;</bucket>
+              <bucket>&quot;Ritsa Hightower&quot;</bucket>
+              <bucket>&quot;Karen Seio&quot;</bucket>
+              <bucket>&quot;Jasper Cacioppo&quot;</bucket>
+              <bucket>&quot;Paul Lucas&quot;</bucket>
+              <bucket>&quot;Mitch Gastineau&quot;</bucket>
+              <bucket>&quot;Adrian Hane&quot;</bucket>
+              <bucket>&quot;Thais Sissman&quot;</bucket>
+              <bucket>&quot;Susan Gilcrest&quot;</bucket>
+              <bucket>&quot;Michael Dominguez&quot;</bucket>
+              <bucket>&quot;Alex Grayson&quot;</bucket>
+              <bucket>&quot;Greg Hansen&quot;</bucket>
+              <bucket>&quot;Odella Nelson&quot;</bucket>
+              <bucket>&quot;Guy Thornton&quot;</bucket>
+              <bucket>&quot;Anthony Garverick&quot;</bucket>
+              <bucket>&quot;Neola Schneider&quot;</bucket>
+              <bucket>&quot;Jonathan Howell&quot;</bucket>
+              <bucket>&quot;Herbert Flentye&quot;</bucket>
+              <bucket>&quot;Bill Stewart&quot;</bucket>
+              <bucket>&quot;Jeremy Farry&quot;</bucket>
+              <bucket>&quot;Scot Wooten&quot;</bucket>
+              <bucket>&quot;Pete Takahito&quot;</bucket>
+              <bucket>&quot;Sarah Jordon&quot;</bucket>
+              <bucket>&quot;Michelle Tran&quot;</bucket>
+              <bucket>&quot;Jennifer Halladay&quot;</bucket>
+              <bucket>&quot;Nick Radford&quot;</bucket>
+              <bucket>&quot;Sally Matthias&quot;</bucket>
+              <bucket>&quot;Anna Chung&quot;</bucket>
+              <bucket>&quot;Joni Wasserman&quot;</bucket>
+              <bucket>&quot;Denny Ordway&quot;</bucket>
+              <bucket>&quot;David Philippe&quot;</bucket>
+              <bucket>&quot;Carlos Meador&quot;</bucket>
+              <bucket>&quot;Liz MacKendrick&quot;</bucket>
+              <bucket>&quot;Phillina Ober&quot;</bucket>
+              <bucket>&quot;Laurel Beltran&quot;</bucket>
+              <bucket>&quot;Vivek Grady&quot;</bucket>
+              <bucket>&quot;Erin Ashbrook&quot;</bucket>
+              <bucket>&quot;Dionis Lloyd&quot;</bucket>
+              <bucket>&quot;Jim Sink&quot;</bucket>
+              <bucket>&quot;Barry Weirich&quot;</bucket>
+              <bucket>&quot;Alyssa Crouse&quot;</bucket>
+              <bucket>&quot;Berenike Kampe&quot;</bucket>
+              <bucket>&quot;Mick Crebagga&quot;</bucket>
+              <bucket>&quot;Ralph Ritter&quot;</bucket>
+              <bucket>&quot;Sung Shariari&quot;</bucket>
+              <bucket>&quot;Maris LaWare&quot;</bucket>
+              <bucket>&quot;Bobby Trafton&quot;</bucket>
+              <bucket>&quot;Edward Becker&quot;</bucket>
+              <bucket>&quot;Sean O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Michael Oakman&quot;</bucket>
+              <bucket>&quot;David Wiener&quot;</bucket>
+              <bucket>&quot;Mike Gockenbach&quot;</bucket>
+              <bucket>&quot;Erica Hernandez&quot;</bucket>
+              <bucket>&quot;Gene Hale&quot;</bucket>
+              <bucket>&quot;Vicky Freymann&quot;</bucket>
+              <bucket>&quot;Justin Hirsh&quot;</bucket>
+              <bucket>&quot;Allen Rosenblatt&quot;</bucket>
+              <bucket>&quot;Arthur Wiediger&quot;</bucket>
+              <bucket>&quot;Darren Koutras&quot;</bucket>
+              <bucket>&quot;Bruce Stewart&quot;</bucket>
+              <bucket>&quot;Sibella Parks&quot;</bucket>
+              <bucket>&quot;Sheri Gordon&quot;</bucket>
+              <bucket>&quot;Carlos Soltero&quot;</bucket>
+              <bucket>&quot;Henia Zydlo&quot;</bucket>
+              <bucket>&quot;Eleni McCrary&quot;</bucket>
+              <bucket>&quot;Pamela Stobb&quot;</bucket>
+              <bucket>&quot;Thea Hendricks&quot;</bucket>
+              <bucket>&quot;Harold Dahlen&quot;</bucket>
+              <bucket>&quot;Troy Blackwell&quot;</bucket>
+              <bucket>&quot;Shahid Hopkins&quot;</bucket>
+              <bucket>&quot;Katherine Nockton&quot;</bucket>
+              <bucket>&quot;Andy Gerbode&quot;</bucket>
+              <bucket>&quot;Art Foster&quot;</bucket>
+              <bucket>&quot;Randy Bradley&quot;</bucket>
+              <bucket>&quot;Jill Stevenson&quot;</bucket>
+              <bucket>&quot;Kelly Lampkin&quot;</bucket>
+              <bucket>&quot;Pauline Chand&quot;</bucket>
+              <bucket>&quot;Toby Swindell&quot;</bucket>
+              <bucket>&quot;Lena Cacioppo&quot;</bucket>
+              <bucket>&quot;Amy Hunt&quot;</bucket>
+              <bucket>&quot;Benjamin Patterson&quot;</bucket>
+              <bucket>&quot;Carol Darley&quot;</bucket>
+              <bucket>&quot;Jack Lebron&quot;</bucket>
+              <bucket>&quot;Alex Russell&quot;</bucket>
+              <bucket>&quot;Valerie Takahito&quot;</bucket>
+              <bucket>&quot;Noel Staavos&quot;</bucket>
+              <bucket>&quot;Susan MacKendrick&quot;</bucket>
+              <bucket>&quot;Maribeth Dona&quot;</bucket>
+              <bucket>&quot;Lisa Hazard&quot;</bucket>
+              <bucket>&quot;Anna Gayman&quot;</bucket>
+              <bucket>&quot;Matthew Clasen&quot;</bucket>
+              <bucket>&quot;Thea Hudgings&quot;</bucket>
+              <bucket>&quot;Aaron Smayling&quot;</bucket>
+              <bucket>&quot;David Flashing&quot;</bucket>
+              <bucket>&quot;Vivek Sundaresam&quot;</bucket>
+              <bucket>&quot;John Dryer&quot;</bucket>
+              <bucket>&quot;Dorothy Wardle&quot;</bucket>
+              <bucket>&quot;Giulietta Weimer&quot;</bucket>
+              <bucket>&quot;Stefania Perrino&quot;</bucket>
+              <bucket>&quot;Ann Blume&quot;</bucket>
+              <bucket>&quot;Joni Blumstein&quot;</bucket>
+              <bucket>&quot;Barry Franz&quot;</bucket>
+              <bucket>&quot;Troy Staebel&quot;</bucket>
+              <bucket>&quot;Elpida Rittenbach&quot;</bucket>
+              <bucket>&quot;Cindy Schnelling&quot;</bucket>
+              <bucket>&quot;Joy Smith&quot;</bucket>
+              <bucket>&quot;Sam Craven&quot;</bucket>
+              <bucket>&quot;Linda Southworth&quot;</bucket>
+              <bucket>&quot;Beth Paige&quot;</bucket>
+              <bucket>&quot;Joni Sundaresam&quot;</bucket>
+              <bucket>&quot;Cyma Kinney&quot;</bucket>
+              <bucket>&quot;Maureen Fritzler&quot;</bucket>
+              <bucket>&quot;Christopher Schild&quot;</bucket>
+              <bucket>&quot;Noah Childs&quot;</bucket>
+              <bucket>&quot;Alex Avila&quot;</bucket>
+              <bucket>&quot;Muhammed Yedwab&quot;</bucket>
+              <bucket>&quot;Alan Haines&quot;</bucket>
+              <bucket>&quot;Lisa Ryan&quot;</bucket>
+              <bucket>&quot;Charles McCrossin&quot;</bucket>
+              <bucket>&quot;Maureen Gnade&quot;</bucket>
+              <bucket>&quot;Michael Kennedy&quot;</bucket>
+              <bucket>&quot;Darrin Van Huff&quot;</bucket>
+              <bucket>&quot;Ryan Akin&quot;</bucket>
+              <bucket>&quot;Ross Baird&quot;</bucket>
+              <bucket>&quot;Michael Grace&quot;</bucket>
+              <bucket>&quot;Michelle Moray&quot;</bucket>
+              <bucket>&quot;Tracy Hopkins&quot;</bucket>
+              <bucket>&quot;Gary Hansen&quot;</bucket>
+              <bucket>&quot;Peter Fuller&quot;</bucket>
+              <bucket>&quot;Joseph Holt&quot;</bucket>
+              <bucket>&quot;Stewart Carmichael&quot;</bucket>
+              <bucket>&quot;Tanja Norvell&quot;</bucket>
+              <bucket>&quot;Barry Gonzalez&quot;</bucket>
+              <bucket>&quot;Skye Norling&quot;</bucket>
+              <bucket>&quot;Jim Radford&quot;</bucket>
+              <bucket>&quot;Paul Knutson&quot;</bucket>
+              <bucket>&quot;Joseph Airdo&quot;</bucket>
+              <bucket>&quot;Victoria Wilson&quot;</bucket>
+              <bucket>&quot;Olvera Toch&quot;</bucket>
+              <bucket>&quot;Shahid Shariari&quot;</bucket>
+              <bucket>&quot;Victoria Pisteka&quot;</bucket>
+              <bucket>&quot;Zuschuss Carroll&quot;</bucket>
+              <bucket>&quot;Tom Prescott&quot;</bucket>
+              <bucket>&quot;Rose O&apos;Brian&quot;</bucket>
+              <bucket>&quot;David Bremer&quot;</bucket>
+              <bucket>&quot;Dan Campbell&quot;</bucket>
+              <bucket>&quot;Tracy Blumstein&quot;</bucket>
+              <bucket>&quot;Becky Martin&quot;</bucket>
+              <bucket>&quot;Natalie Fritzler&quot;</bucket>
+              <bucket>&quot;Christine Phan&quot;</bucket>
+              <bucket>&quot;Sean Miller&quot;</bucket>
+              <bucket>&quot;Sean Braxton&quot;</bucket>
+              <bucket>&quot;Nathan Cano&quot;</bucket>
+              <bucket>&quot;Henry Goldwyn&quot;</bucket>
+              <bucket>&quot;Sharelle Roach&quot;</bucket>
+              <bucket>&quot;Luke Foster&quot;</bucket>
+              <bucket>&quot;Grant Thornton&quot;</bucket>
+              <bucket>&quot;Cindy Stewart&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>3</max>
+          </filter>
+          <slices>
+            <column>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Customer Name:nk]</column>
+            <column>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f0e4dd</color>
+                <color>#efd8ca</color>
+                <color>#eeccb7</color>
+                <color>#eec0a4</color>
+                <color>#edb491</color>
+                <color>#eca87e</color>
+                <color>#ec9c6b</color>
+                <color>#eb9158</color>
+                <color>#ea8546</color>
+                <color>#ea7a34</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f0e4dd</color>
+                <color>#efd8ca</color>
+                <color>#eeccb7</color>
+                <color>#eec0a4</color>
+                <color>#edb491</color>
+                <color>#eca87e</color>
+                <color>#ec9c6b</color>
+                <color>#eb9158</color>
+                <color>#ea8546</color>
+                <color>#ea7a34</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Customer Name:nk]</rows>
+        <cols>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]</cols>
+      </table>
+      <simple-id uuid='{E4C20E76-1DE3-49E0-ADBE-059C7DFFB8CF}' />
+    </worksheet>
+    <worksheet name='Most profitable product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[rank:sum:Profit:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Copiers&quot;</bucket>
+              <bucket>&quot;Phones&quot;</bucket>
+              <bucket>&quot;Accessories&quot;</bucket>
+              <bucket>&quot;Binders&quot;</bucket>
+              <bucket>&quot;Chairs&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:2]' included-values='in-range'>
+            <min>1</min>
+            <max>3</max>
+          </filter>
+          <slices>
+            <column>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[rank:sum:Profit:qk:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]</rows>
+        <cols>([federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Region:nk] / [federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk])</cols>
+      </table>
+      <simple-id uuid='{D666BA91-EFBA-42A5-94E0-3521FB7195F1}' />
+    </worksheet>
+    <worksheet name='Profit Subcategory'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]</rows>
+        <cols>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]</cols>
+      </table>
+      <simple-id uuid='{56B0FA14-ADAE-4E17-A6C9-15846223593B}' />
+    </worksheet>
+    <worksheet name='Quarterly Profit'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Quarter' name='[qr:Order Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok]' />
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]</rows>
+        <cols>([federated.14ghlal12upeyu1ff5q5p0i8rsl5].[yr:Order Date:ok] / [federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok])</cols>
+      </table>
+      <simple-id uuid='{87D700F3-71CA-4D35-BBDA-2B2DA3834F10}' />
+    </worksheet>
+    <worksheet name='Quarterly Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample - Superstore' name='federated.14ghlal12upeyu1ff5q5p0i8rsl5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14ghlal12upeyu1ff5q5p0i8rsl5'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Quarter' name='[qr:Order Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[yr:Order Date:ok]' value='21' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok]' />
+              <text column='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Sales:qk]</rows>
+        <cols>([federated.14ghlal12upeyu1ff5q5p0i8rsl5].[yr:Order Date:ok] / [federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok])</cols>
+      </table>
+      <simple-id uuid='{EAE6B79B-FC73-4C4D-84A3-5C1CBD18A244}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='27750' id='5' name='KPI Sales' w='24200' x='26400' y='4250' />
+        <zone h='28250' id='6' name='KPI Profit' w='24300' x='700' y='3750' />
+        <zone h='32125' id='7' name='KPI Comparison' w='45700' x='52400' y='3375' />
+        <zone h='30125' id='8' name='Quarterly Sales' w='97700' x='1100' y='39000' />
+        <zone h='29875' id='10' name='Quarterly Profit' w='96900' x='1800' y='70875' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='22' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='253' h='31625' id='7' is-fixed='true' name='KPI Comparison' w='45700' x='51500' y='1750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='31750' id='6' is-fixed='true' name='KPI Profit' w='25400' x='600' y='4500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='222' h='27750' id='5' is-fixed='true' name='KPI Sales' w='24200' x='25800' y='4625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='221' h='27625' id='8' is-fixed='true' name='Quarterly Sales' w='37500' x='1600' y='38250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='221' h='27625' id='10' is-fixed='true' name='Quarterly Profit' w='38700' x='42000' y='38375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4EBC1A60-7CBB-4B88-BE49-96EE23B496A1}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='34500' id='8' name='Most profitable product' w='78800' x='1400' y='64750' />
+        <zone h='14750' id='9' name='Most profitable product' pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' type-v2='color' w='14000' x='83500' y='71000' />
+        <zone h='33250' id='10' name='Most Profitable Customers' w='77000' x='1400' y='41875' />
+        <zone h='9500' id='11' name='Most Profitable Customers' pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' type-v2='color' w='14000' x='81400' y='43500' />
+        <zone h='37000' id='12' name='Profit Subcategory' w='94800' x='1400' y='2375' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{00A4C260-D55A-423A-9F7D-C6D89E8D3460}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9B7F3CC-CAD5-4E90-9044-1710DAA05023}' />
+    </window>
+    <window class='worksheet' name='KPI Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FBE0237A-EAF6-4A8E-A684-7DCF2FBDF5B8}' />
+    </window>
+    <window class='worksheet' name='KPI Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45BE988E-43C5-49AC-B878-D4903BCC7C4C}' />
+    </window>
+    <window class='worksheet' name='Quarterly Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4FD62EBF-D771-4C86-80DB-7DD76FA9C84F}' />
+    </window>
+    <window class='worksheet' name='Quarterly Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[qr:Order Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C1D7FEF1-6FB4-4135-B834-B0A4FA35C689}' />
+    </window>
+    <window class='worksheet' name='Profit Subcategory'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A9E187E-2EFF-4242-89DF-0343729AA1C3}' />
+    </window>
+    <window class='worksheet' name='Most profitable product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[none:Sub-Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6959FDA9-6CF8-4C91-9A7D-C0E35DBEBB3E}' />
+    </window>
+    <window class='worksheet' name='Most Profitable Customers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14ghlal12upeyu1ff5q5p0i8rsl5].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6BCD6EF3-597E-4A5B-A29F-9404D8CDCA01}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='KPI Comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quarterly Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quarterly Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{97CACB27-C8F9-4CB3-ACB7-86043585C1A6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Most Profitable Customers' />
+        <viewpoint name='Most profitable product'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Profit Subcategory'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{654655BE-511C-44C4-8404-54A75F99927D}' />
+    </window>
+  </windows>
+</workbook>
